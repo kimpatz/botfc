@@ -1,0 +1,68 @@
+2024-11-21 20:54:49,151 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-21 20:54:49,152 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-21 20:54:49,152 - INFO -  * Restarting with stat
+2024-11-21 20:54:49,353 - WARNING -  * Debugger is active!
+2024-11-21 20:54:49,362 - INFO -  * Debugger PIN: 122-559-329
+2024-11-21 20:54:55,742 - INFO - 127.0.0.1 - - [21/Nov/2024 20:54:55] "GET / HTTP/1.1" 200 -
+2024-11-21 20:54:55,769 - INFO - 127.0.0.1 - - [21/Nov/2024 20:54:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-11-21 20:54:56,174 - INFO - 127.0.0.1 - - [21/Nov/2024 20:54:56] "GET / HTTP/1.1" 200 -
+2024-11-21 20:55:40,489 - INFO - Received request data: {'post_url': 'https://www.facebook.com/permalink.php?story_fbid=pfbid02d1T9theAVTH3M3ELk43Eit3xtvZfakabEUuvbRoKwDaRkSkreydLJmckANS8eYR2l&id=61566568512033', 'profiles': [{'profile': 'Profile 28', 'comment': '', 'media_path': ''}, {'profile': 'Profile 17', 'comment': '', 'media_path': ''}, {'profile': 'Profile 19', 'comment': '', 'media_path': ''}, {'profile': 'Profile 26', 'comment': '', 'media_path': ''}, {'profile': 'Profile 72', 'comment': '', 'media_path': ''}, {'profile': 'Profile 43', 'comment': '', 'media_path': ''}, {'profile': 'Profile 18', 'comment': '', 'media_path': ''}, {'profile': 'Profile 27', 'comment': '', 'media_path': ''}, {'profile': 'Profile 29', 'comment': '', 'media_path': ''}, {'profile': 'Profile 42', 'comment': '', 'media_path': ''}, {'profile': 'Profile 45', 'comment': '', 'media_path': ''}, {'profile': 'Profile 74', 'comment': '', 'media_path': ''}, {'profile': 'Profile 69', 'comment': '', 'media_path': ''}, {'profile': 'Profile 56', 'comment': '', 'media_path': ''}, {'profile': 'Profile 7', 'comment': '', 'media_path': ''}, {'profile': 'Profile 58', 'comment': '', 'media_path': ''}, {'profile': 'Profile 67', 'comment': '', 'media_path': ''}, {'profile': 'Profile 60', 'comment': '', 'media_path': ''}, {'profile': 'Profile 8', 'comment': '', 'media_path': ''}, {'profile': 'Profile 61', 'comment': '', 'media_path': ''}, {'profile': 'Profile 66', 'comment': '', 'media_path': ''}, {'profile': 'Profile 50', 'comment': '', 'media_path': ''}, {'profile': 'Profile 57', 'comment': '', 'media_path': ''}, {'profile': 'Profile 71', 'comment': '', 'media_path': ''}, {'profile': 'Profile 76', 'comment': '', 'media_path': ''}, {'profile': 'Profile 49', 'comment': '', 'media_path': ''}, {'profile': 'Profile 40', 'comment': '', 'media_path': ''}, {'profile': 'Profile 47', 'comment': '', 'media_path': ''}, {'profile': 'Profile 13', 'comment': '', 'media_path': ''}, {'profile': 'Profile 14', 'comment': '', 'media_path': ''}, {'profile': 'Profile 22', 'comment': '', 'media_path': ''}, {'profile': 'Profile 25', 'comment': '', 'media_path': ''}, {'profile': 'Profile 41', 'comment': '', 'media_path': ''}, {'profile': 'Profile 48', 'comment': '', 'media_path': ''}, {'profile': 'Profile 70', 'comment': '', 'media_path': ''}, {'profile': 'Profile 15', 'comment': '', 'media_path': ''}, {'profile': 'Profile 12', 'comment': '', 'media_path': ''}, {'profile': 'Profile 30', 'comment': '', 'media_path': ''}, {'profile': 'Profile 39', 'comment': '', 'media_path': ''}, {'profile': 'Profile 4', 'comment': '', 'media_path': ''}, {'profile': 'Profile 55', 'comment': '', 'media_path': ''}, {'profile': 'Profile 63', 'comment': '', 'media_path': ''}, {'profile': 'Profile 38', 'comment': '', 'media_path': ''}, {'profile': 'Profile 36', 'comment': '', 'media_path': ''}, {'profile': 'Profile 65', 'comment': '', 'media_path': ''}, {'profile': 'Profile 2', 'comment': '', 'media_path': ''}, {'profile': 'Profile 54', 'comment': '', 'media_path': ''}, {'profile': 'Profile 53', 'comment': 'בדשבדשבדשבדש', 'media_path': ''}]}
+2024-11-21 20:55:40,490 - INFO - Starting publish_comments function
+2024-11-21 20:55:40,490 - INFO - Skipping profile Profile 28 - no comment or media provided.
+2024-11-21 20:55:40,490 - INFO - Skipping profile Profile 17 - no comment or media provided.
+2024-11-21 20:55:40,490 - INFO - Skipping profile Profile 19 - no comment or media provided.
+2024-11-21 20:55:40,490 - INFO - Skipping profile Profile 26 - no comment or media provided.
+2024-11-21 20:55:40,490 - INFO - Skipping profile Profile 72 - no comment or media provided.
+2024-11-21 20:55:40,490 - INFO - Skipping profile Profile 43 - no comment or media provided.
+2024-11-21 20:55:40,490 - INFO - Skipping profile Profile 18 - no comment or media provided.
+2024-11-21 20:55:40,490 - INFO - Skipping profile Profile 27 - no comment or media provided.
+2024-11-21 20:55:40,490 - INFO - Skipping profile Profile 29 - no comment or media provided.
+2024-11-21 20:55:40,490 - INFO - Skipping profile Profile 42 - no comment or media provided.
+2024-11-21 20:55:40,490 - INFO - Skipping profile Profile 45 - no comment or media provided.
+2024-11-21 20:55:40,490 - INFO - Skipping profile Profile 74 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 69 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 56 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 7 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 58 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 67 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 60 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 8 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 61 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 66 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 50 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 57 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 71 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 76 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 49 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 40 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 47 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 13 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 14 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 22 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 25 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 41 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 48 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 70 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 15 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 12 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 30 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 39 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 4 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 55 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 63 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 38 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 36 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 65 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 2 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Skipping profile Profile 54 - no comment or media provided.
+2024-11-21 20:55:40,491 - INFO - Creating Chrome driver for profile: Profile 53
+2024-11-21 20:55:40,491 - INFO - Starting ChromeDriver with profile: Profile 53
+2024-11-21 20:55:40,492 - DEBUG - getting release number from /LATEST_RELEASE
+2024-11-21 20:55:40,633 - DEBUG - downloading from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_mac64.zip
+2024-11-21 20:55:41,603 - DEBUG - unzipping /var/folders/x8/1492vwln3yb6h2ycnfvjf26w0000gn/T/tmpf8vrhovo
+2024-11-21 20:55:41,673 - INFO - patching driver executable /Users/dorperetz/Library/Application Support/undetected_chromedriver/ef6965d154e3501f_chromedriver
+2024-11-21 20:55:42,033 - DEBUG - Started executable: `/Users/dorperetz/Library/Application Support/undetected_chromedriver/ef6965d154e3501f_chromedriver` in a child process with pid: 6220
+2024-11-21 20:55:44,560 - DEBUG - POST http://localhost:59703/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "binary": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "args": ["--user-data-dir=/Users/dorperetz/Library/Application Support/Google/Chrome", "--profile-directory=Profile 53", "--disable-notifications", "--disable-infobars", "--start-maximized", "--log-path=/Users/dorperetz/Desktop/bot/chromedriver.log", "--verbose", "--enable-logging", "--v=1", "--remote-debugging-host=127.0.0.1", "--remote-debugging-port=59701", "--lang=en-US", "--no-default-browser-check", "--no-first-run", "--log-level=0"], "debuggerAddress": "127.0.0.1:59701"}}}}
+2024-11-21 20:55:44,560 - DEBUG - Starting new HTTP connection (1): localhost:59703
+2024-11-21 20:56:11,056 - DEBUG - cleaning up pid 6219 

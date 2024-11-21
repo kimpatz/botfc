@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook Comment Bot</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>Facebook Comment Bot</h1>
+    <form id="comment-form">
+        <label for="post_url">Post URL:</label>
+        <input type="text" id="post_url" name="post_url" placeholder="Enter Facebook post URL" required>
+
+        <h2>Profiles:</h2>
+        <div id="profiles">
+            {% if profiles %}
+                {% for profile in profiles %}
+                    <div class="profile">
+                        <h3>{{ profile.name }}</h3>
+                        <input type="hidden" name="profile_name" value="{{ profile.folder }}">
+                        <label for="comment_{{ profile.folder }}">Comment:</label>
+                        <textarea id="comment_{{ profile.folder }}" name="comment" placeholder="Enter comment"></textarea>
+                        <label for="media_{{ profile.folder }}">Media File:</label>
+                        <input type="file" id="media_{{ profile.folder }}" name="media">
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No profiles found.</p>
+            {% endif %}
+        </div>
+
+        <button type="submit">Publish Comments</button>
+    </form>
+
+    <script>
+        document.getElementById('comment-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const postData = {
+                post_url: document.getElementById('post_url').value.trim(),
+                profiles: []
+            };
+
+            document.querySelectorAll('.profile').forEach(profile => {
+                const profileName = profile.querySelector('input[name="profile_name"]').value;
+                const comment = profile.querySelector('textarea[name="comment"]').value || '';
+                const mediaInput = profile.querySelector('input[name="media"]');
+                const mediaPath = mediaInput.files[0] ? mediaInput.files[0].path : '';
+
+                postData.profiles.push({
+                    profile: profileName,
+                    comment: comment.trim(),
+                    media_path: mediaPath.trim()
+                });
+            });
+
+            const response = await fetch('/publish', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(postData),
+            });
+
+            const result = await response.json();
+            if (result.success) {
+                alert('Comments published successfully!');
+            } else {
+                alert(`Error: ${result.error}`);
+            }
+        });
+    </script>
+</body>
+</html>
